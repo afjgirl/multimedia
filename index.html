@@ -1,70 +1,73 @@
-<html lang="en"><head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <meta name="description" content="">
-    <meta name="author" content="">
+<html lang="en">
 
-    <title>Cover Template for Bootstrap</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <meta name="description" content="">
+  <meta name="author" content="">
 
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <title>Cover Template for Bootstrap</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-    <!-- Optional theme -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <!-- Custom styles for this template -->
-    <link href="cover.css" rel="stylesheet">
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
-  </head>
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <!-- Custom styles for this template -->
+  <link href="cover.css" rel="stylesheet">
+  <script src="jquery.min.js"></script>
+  <script src="jquery.paver.min.js"></script>
+  <script src="jquery.ba-throttle-debounce.min.js"></script>
+  <link rel="stylesheet" href="paver.min.css">
+  <style>
+    .panorama {
+      height: 400px;
+      overflow-x: scroll;
+      overflow-y: hidden;
+      img {
+        height: 100%;
+      }
+    }
+  </style>
+</head>
 
-  <body>
+<body>
+      <div class="container" style="padding:0 100px">
+            <h3><small>By Audrey, Millee & Nikki</small></h3>
+          <h1>Blackwattle Bay</h1>
+          <p class="lead">Blackwattle Bay is a public space that overlooks the bay and has a view of the Anzac Bridge. It is connected to Rozelle Bay, Jubilee Park, the Fish Markets, Glebe and White Bay. There are eateries, residency and parks that lets people enjoy
+            the bay. </p>
+          <p class="lead">
+            <a href="/tour" class="btn btn-lg btn-default">Tour</a>
+          </p>
+  <div class="panorama">
+    <img src="download%20%282%29.png" alt="" title="" />
+  </div>
+<p style="padding:10px">
+  It also caters to people who enjoy to run and exercise and wish for a different view to their everyday local gym. Paths are available and the bay is very dog friendly. These pictures will show the beauty of the bay and the facilities
+  available.
+</p>
+  <div class="panorama">
+    <img src="download%20%2819%29.png" alt="" title="" />
+  </div>
+  <p style="padding:10px">The boats
+  and water sports such as rowing and kayaking, could be done safely as commercial boats are rarely seen inside the bay.</p>
+  <div class="panorama">
+    <img src="download.png" alt="" title="" />
+  </div>
+  <p style="padding:10px">It also shows how a school could be located in the bayfront and the structure of the residential buildings. It also shows the layout of the bay. The bay is also used for water activities that are available to the public. </p>
+  <script>
+    $(function() {
+      $('div.panorama').paver();
+    });
+  </script>
+</div>
+</body>
 
-    <div class="site-wrapper">
-
-      <div class="site-wrapper-inner">
-
-        <div class="cover-container">
-
-          <div class="masthead clearfix">
-            <div class="inner">
-              <h3 class="masthead-brand">Cover</h3>
-              <nav>
-                <ul class="nav masthead-nav">
-                  <li class="active"><a href="#">Home</a></li>
-                  <li><a href="#">Features</a></li>
-                  <li><a href="#">Contact</a></li>
-                </ul>
-              </nav>
-            </div>
-          </div>
-<!-- - - - - - - 8<- - - - - - cut here - - - - - 8<- - - - - - - -->
-		<script type="text/javascript" src="pano2vr_player.js">
-		</script>
-		<div id="container" style="width:100%;height:100%;overflow:hidden;">
-		<br>Loading...<br><br>
-		This content requires HTML5 with CSS3 3D Transforms or WebGL.
-		</div>
-		<script type="text/javascript">
-	
-			// create the panorama player with the container
-			pano=new pano2vrPlayer("container");
-		window.addEventListener("load", function() {
-			pano.readConfigUrlAsync("pano.xml");
-		});
-		</script>
-		<noscript>
-			<p><b>Please enable Javascript!</b></p>
-		</noscript>
-<!-- - - - - - - 8<- - - - - - cut here - - - - - 8<- - - - - - - --> 
-		<!-- Hack needed to hide the url bar on iOS 9, iPhone 5s --> 
-		<div style="width:1px;height:1px;"></div>
-          </div>
-        </div>
-      </div>
-    </div>
-</body></html>
+</html>
